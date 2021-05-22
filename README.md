@@ -2,13 +2,11 @@
 
 # terrarium-puredaisy
 
-Template for creating a Terrarium/Daisy binary from a Pure Data patch.
+A PedalPCB Terrarium/Daisy PureData patch that plays a Cmaj7+ chord
+controlled by knobs. Use it to test that all knobs respond.
 
 
 # Prerequisites
-
-This template has been tested on macOS, Windows Subsystem for Linux
-and Ubuntu.
 
 Your local machine needs:
 
@@ -35,25 +33,12 @@ Clone your new repository locally and do a one time bootstrap:
 The process may want your input to install additional Python
 packages.
 
-Then test build the stand-in patch:
 
-    make
-
-and program the daisy with `patch.bin`.  The stand-in patch is a
-tremolo effect. Knob 1 controls the speed.
-
-
-# Making your own binary
-
-Replace the stand-in patch `patch.pd` with your own Pd file.
-You can use your own name; edit `Makefile` so that TARGET
-is the base name of your file, without the `.pd` extension.
-
-When your .pd file is ready to build a .bin, type
+# Building the binary
 
     make
     
-If all is successful, your .bin file will be next to your .pd file.
+`helloknob.bin` will be next to `helloknob.pd`.
 
 
 # Resources
