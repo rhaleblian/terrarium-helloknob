@@ -1,6 +1,6 @@
-[![CI](https://github.com/rhaleblian/terrarium-puredaisy/actions/workflows/CI.yml/badge.svg)](https://github.com/rhaleblian/terrarium-puredaisy/actions/workflows/CI.yml)
+[![CI](https://github.com/rhaleblian/terrarium-helloknob/actions/workflows/CI.yml/badge.svg)](https://github.com/rhaleblian/terrarium-helloknob/actions/workflows/CI.yml)
 
-# terrarium-puredaisy
+# terrarium-helloknob
 
 A PedalPCB Terrarium/Daisy PureData patch that plays a Cmaj7+ chord
 controlled by knobs. Use it to test that all knobs respond.
