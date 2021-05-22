@@ -2,11 +2,13 @@
 
 # terrarium-helloknob
 
-A PedalPCB Terrarium/Daisy PureData patch that plays a Cmaj7+ chord
+A PedalPCB Terrarium PureData patch that plays a Cmaj7+ chord
 controlled by knobs. Use it to test that all knobs respond.
 
+Want to get the binary file immediately? See the Releases.
 
-# Prerequisites
+
+## Prerequisites
 
 Your local machine needs:
 
@@ -22,7 +24,7 @@ On macOS you can do same if you have Homebrew installed:
     brew install python3 gcc-arm-none-eabi
 
 
-# Setup
+## Setup
 
 Create a new GitHub repository using this one as a template.
 
@@ -34,7 +36,7 @@ The process may want your input to install additional Python
 packages.
 
 
-# Building the binary
+## Building the binary
 
     make
     
