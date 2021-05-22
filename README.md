@@ -26,10 +26,6 @@ On macOS you can do same if you have Homebrew installed:
 
 ## Setup
 
-Create a new GitHub repository using this one as a template.
-
-Clone your new repository locally and do a one time bootstrap:
-
     make bootstrap
 
 The process may want your input to install additional Python
@@ -46,4 +42,3 @@ packages.
 # Resources
 
 [Pure Data Manual](http://write.flossmanuals.net/pure-data/introduction2/)
-
