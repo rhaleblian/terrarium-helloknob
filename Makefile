@@ -1,4 +1,4 @@
-TARGET=patch
+TARGET=helloknob
 
 $(TARGET).bin: $(TARGET).pd
 	- rm -r build $(TARGET).bin
