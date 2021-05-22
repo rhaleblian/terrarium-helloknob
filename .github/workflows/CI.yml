@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, actions ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+      
+    steps:
+
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install arm-none-eabi-gcc toolchain
+      uses: fiam/arm-none-eabi-gcc@v1
+      with:
+        release: '9-2019-q4'
+        
+    - name: Bootstrap repository
+      run:
+        make bootstrap
+
+    - name: Build binary
+      run:
+        make
