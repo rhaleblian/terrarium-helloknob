@@ -1,14 +1,14 @@
-[![CI](https://github.com/rhaleblian/terrarium-puredaisy/actions/workflows/CI.yml/badge.svg)](https://github.com/rhaleblian/terrarium-puredaisy/actions/workflows/CI.yml)
+[![CI](https://github.com/rhaleblian/terrarium-helloknob/actions/workflows/CI.yml/badge.svg)](https://github.com/rhaleblian/terrarium-helloknob/actions/workflows/CI.yml)
 
-# terrarium-puredaisy
+# terrarium-helloknob
 
-Template for creating a Terrarium/Daisy binary from a Pure Data patch.
+A PedalPCB Terrarium PureData patch that plays a Cmaj7+ chord
+controlled by knobs. Use it to test that all knobs respond.
+
+Want to get the binary file immediately? See the Releases.
 
 
-# Prerequisites
-
-This template has been tested on macOS, Windows Subsystem for Linux
-and Ubuntu.
+## Prerequisites
 
 Your local machine needs:
 
@@ -24,39 +24,21 @@ On macOS you can do same if you have Homebrew installed:
     brew install python3 gcc-arm-none-eabi
 
 
-# Setup
-
-Create a new GitHub repository using this one as a template.
-
-Clone your new repository locally and do a one time bootstrap:
+## Setup
 
     make bootstrap
 
 The process may want your input to install additional Python
 packages.
 
-Then test build the stand-in patch:
 
-    make
-
-and program the daisy with `patch.bin`.  The stand-in patch is a
-tremolo effect. Knob 1 controls the speed.
-
-
-# Making your own binary
-
-Replace the stand-in patch `patch.pd` with your own Pd file.
-You can use your own name; edit `Makefile` so that TARGET
-is the base name of your file, without the `.pd` extension.
-
-When your .pd file is ready to build a .bin, type
+## Building the binary
 
     make
     
-If all is successful, your .bin file will be next to your .pd file.
+`helloknob.bin` will be next to `helloknob.pd`.
 
 
 # Resources
 
 [Pure Data Manual](http://write.flossmanuals.net/pure-data/introduction2/)
-
